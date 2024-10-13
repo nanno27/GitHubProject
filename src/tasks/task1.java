@@ -14,7 +14,7 @@ public class task1 {
         System.out.println(result);
     }
 
-    static CharSequence seqString(CharSequence charString, int N) {
+    static StringBuilder seqString(CharSequence charString, int N) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 1; i <= N; i++) {
             stringBuilder.append(charString);
