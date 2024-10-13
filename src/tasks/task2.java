@@ -30,13 +30,12 @@ public class task2 {
     static void sumArrayColumns(int[][] array, int N) {
         int rows = N;
         int columns = N;
-        int sum = 0;
         for (int i = 0; i < rows; i++) {
-            sum = 0;
+            int sum = 0;
             for (int j = 0; j < columns; j++) {
                 sum += array[j][i];
             }
-            System.out.println("Сумма столбца " + (i + 1) + ": " + sum);
+            System.out.println("Сумма " + (i + 1) + " столбца:" + " " + sum);
         }
     }
 
