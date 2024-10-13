@@ -7,8 +7,7 @@ public class task1 {
         String string = scanner.nextLine();
         final int N = scanner.nextInt();
 
-        CharSequence charString = string;
-        CharSequence result = seqString(charString, N);
+        CharSequence result = seqString(string, N);
 
         System.out.println(result);
     }
