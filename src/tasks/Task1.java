@@ -1,7 +1,7 @@
 package tasks;
 import java.util.Scanner;
 
-public class task1 {
+public class Task1 {
     public void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите строку: ");

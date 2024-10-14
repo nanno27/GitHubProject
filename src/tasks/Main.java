@@ -9,13 +9,16 @@ public class Main {
 
         switch (task) {
             case 1:
-                task1 runTask1 = new task1();
+                Task1 runTask1 = new Task1();
                 runTask1.run();
                 break;
             case 2:
-                task2 runTask2 = new task2();
+                Task2 runTask2 = new Task2();
                 runTask2.run();
                 break;
         }
+
+
+        scanner.close();
     }
 }

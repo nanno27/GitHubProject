@@ -2,7 +2,7 @@ package tasks;
 import java.util.Scanner;
 import java.util.Random;
 
-public class task2 {
+public class Task2 {
     public void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размерность двумерного массива: ");
