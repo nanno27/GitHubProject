@@ -2,14 +2,18 @@ package tasks;
 import java.util.Scanner;
 
 public class task1 {
-    public static void main(String[] args) {
+    public void run() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите строку: ");
         String string = scanner.nextLine();
+        System.out.println("Количество повторов: ");
         final int N = scanner.nextInt();
 
         CharSequence result = seqString(string, N);
 
         System.out.println(result);
+
+        scanner.close();
     }
 
     static StringBuilder seqString(CharSequence charString, int N) {

@@ -3,8 +3,9 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class task2 {
-    public static void main(String[] args) {
+    public void run() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите размерность двумерного массива: ");
         final int N = scanner.nextInt();
 
         int [][] array = makeArray(N);
@@ -13,12 +14,10 @@ public class task2 {
 
     static int[][] makeArray(int N) {
         Random random = new Random();
-        int rows = N;
-        int columns = N;
-        int[][] array = new int[rows][columns];
+        int[][] array = new int[N][N];
 
-        for(int i = 0; i < rows; i++) {
-            for(int j = 0; j < columns; j++) {
+        for(int i = 0; i < N; i++) {
+            for(int j = 0; j < N; j++) {
                 array[i][j] = random.nextInt(0, 10);
                 System.out.print(array[i][j] + " ");
             }
@@ -28,11 +27,9 @@ public class task2 {
     }
 
     static void sumArrayColumns(int[][] array, int N) {
-        int rows = N;
-        int columns = N;
-        for (int i = 0; i < rows; i++) {
+        for (int i = 0; i < N; i++) {
             int sum = 0;
-            for (int j = 0; j < columns; j++) {
+            for (int j = 0; j < N; j++) {
                 sum += array[j][i];
             }
             System.out.println("Сумма " + (i + 1) + " столбца:" + " " + sum);
