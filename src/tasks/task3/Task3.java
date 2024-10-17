@@ -1,11 +1,9 @@
 package tasks.task3;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Task3 {
     public void run() {
-        Scanner scanner = new Scanner(System.in);
         List<Employee> employees = new ArrayList<>();
         employees.add(new Director("Никита", "03.06.2003", "Мужской", "Директор"));
         employees.add(new Director("Тигран", "24.05.2003", "Мужской", "Директор"));
@@ -19,8 +17,6 @@ public class Task3 {
         for (Employee employee : employees) {
             employee.EmployeeInfo();
         }
-
-        scanner.close();
     }
 }
 
@@ -42,7 +38,7 @@ class Employee {
     }
 
     public void promote(){
-        //
+        this.position = "Какая-то позиция";
     }
 
 }
