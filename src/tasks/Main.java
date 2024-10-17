@@ -1,7 +1,7 @@
 package tasks;
 import tasks.task1.Task1;
 import tasks.task2.Task2;
-
+import tasks.task3.Task3;
 import java.util.Scanner;
 
 public class Main {
@@ -19,9 +19,11 @@ public class Main {
                 Task2 runTask2 = new Task2();
                 runTask2.run();
                 break;
+            case 3:
+                Task3 runTask3 = new Task3();
+                runTask3.run();
+                break;
         }
-
-
         scanner.close();
     }
 }
