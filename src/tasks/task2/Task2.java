@@ -27,7 +27,6 @@ public class Task2 {
     static int[][] makeArray(int N) {
         Random random = new Random();
         int[][] array = new int[N][N];
-
         for(int i = 0; i < N; i++) {
             for(int j = 0; j < N; j++) {
                 array[i][j] = random.nextInt(-100, 100);
