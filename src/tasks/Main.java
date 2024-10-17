@@ -1,4 +1,7 @@
 package tasks;
+import tasks.task1.Task1;
+import tasks.task2.Task2;
+
 import java.util.Scanner;
 
 public class Main {
